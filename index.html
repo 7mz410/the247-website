@@ -105,10 +105,12 @@
   .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:16px;}
   .card{
     background:var(--card); border:1px solid var(--border); border-radius:10px;
-    padding:22px; display:flex; flex-direction:column; gap:12px;
+    overflow:hidden; display:flex; flex-direction:column;
     transition:border-color .15s, transform .15s;
   }
   .card:hover{border-color:var(--accent); transform:translateY(-2px);}
+  .card-thumb{width:100%; aspect-ratio:16/10; object-fit:cover; object-position:top; display:block; border-bottom:1px solid var(--border);}
+  .card-body{padding:22px; display:flex; flex-direction:column; gap:12px; flex:1;}
   .card-top{display:flex; justify-content:space-between; align-items:flex-start; gap:10px;}
   .card h3{font-size:1.08rem; font-weight:700;}
   .status{
@@ -119,6 +121,9 @@
   .status.wip{background:var(--wip-dim); color:var(--wip);}
   .status.idea{background:var(--idea-dim); color:var(--idea);}
   .card p{color:var(--muted); font-size:.88rem;}
+  .card p.role{color:var(--accent); font-family:var(--mono); font-size:.72rem; letter-spacing:.03em; text-transform:uppercase;}
+  .card p.owns{font-size:.8rem; border-top:1px solid var(--border); padding-top:10px; margin-top:2px;}
+  .card p.owns strong{color:var(--text);}
   .stack{display:flex; flex-wrap:wrap; gap:6px; margin-top:auto;}
   .tag{font-family:var(--mono); font-size:.68rem; color:var(--muted); border:1px solid var(--border); border-radius:4px; padding:2px 7px;}
   .card-link{font-family:var(--mono); font-size:.8rem; color:var(--accent); margin-top:2px;}
@@ -140,6 +145,7 @@
       <li><a href="#apps">platforms</a></li>
       <li><a href="#mobile">mobile</a></li>
       <li><a href="#websites">websites</a></li>
+      <li><a href="#team">team</a></li>
     </ul>
   </nav>
 </header>
@@ -155,10 +161,10 @@
     </div>
     <p>A working portfolio of SaaS platforms, automation engines, mobile apps and websites — designed and coded end-to-end using AI-assisted development.</p>
     <div class="readout">
-      <div><div class="n">3</div><div class="l">live domains</div></div>
+      <div><div class="n">4</div><div class="l">live domains</div></div>
       <div><div class="n">4</div><div class="l">automation engines</div></div>
       <div><div class="n">1</div><div class="l">store-ready app</div></div>
-      <div><div class="n">12</div><div class="l">shipped projects</div></div>
+      <div><div class="n">13</div><div class="l">shipped projects</div></div>
     </div>
   </div>
 </section>
@@ -173,29 +179,35 @@
     <div class="grid">
 
       <div class="card">
+        <img class="card-thumb" src="shots/palift.jpg" alt="Palift Sales Workflow screenshot" loading="lazy">
+        <div class="card-body">
         <div class="card-top"><h3>Palift Sales Workflow</h3><span class="status ok">live</span></div>
         <p>Bilingual (EN/AR) six-stage sales pipeline for a forklift/heavy-machinery dealer — Lead → Opportunity → Terms → Contract → GM Approval → PDI — with role-based Firestore security rules and a legal contract PDF export engine.</p>
         <div class="stack"><span class="tag">React 19</span><span class="tag">Firebase</span><span class="tag">TypeScript</span><span class="tag">i18next</span></div>
+        </div>
       </div>
-
       <div class="card">
+        <div class="card-body">
         <div class="card-top"><h3>AI Genesis</h3><span class="status ok">live</span></div>
         <p>Autonomous YouTube content factory: researches trending topics, writes scripts, generates voice-over and AI images, assembles video, and publishes on a schedule — no manual steps.</p>
         <div class="stack"><span class="tag">Python</span><span class="tag">Gemini API</span><span class="tag">Google TTS</span><span class="tag">YouTube API</span></div>
+        </div>
       </div>
-
       <div class="card">
+        <img class="card-thumb" src="shots/roz.jpg" alt="ROZ — Core HR screenshot" loading="lazy">
+        <div class="card-body">
         <div class="card-top"><h3>ROZ — Core HR</h3><span class="status wip">beta</span></div>
         <p>Attendance & leave-management SaaS with shift check-in/out push reminders on a cron schedule, full auth, and a real Postgres schema behind it.</p>
         <div class="stack"><span class="tag">Next.js</span><span class="tag">Prisma</span><span class="tag">PostgreSQL</span><span class="tag">NextAuth</span></div>
+        </div>
       </div>
-
       <div class="card">
+        <div class="card-body">
         <div class="card-top"><h3>LinkedIn Apply Agent</h3><span class="status wip">tool</span></div>
         <p>Job-search automation: scrapes and matches listings, drafts tailored applications, and generates a report — a personal Puppeteer-driven agent.</p>
         <div class="stack"><span class="tag">Node.js</span><span class="tag">Puppeteer</span></div>
+        </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -210,11 +222,12 @@
     <div class="grid">
 
       <div class="card">
+        <div class="card-body">
         <div class="card-top"><h3>Tasbih</h3><span class="status ok">store-ready</span></div>
         <p>Digital dhikr/prayer-bead counter app with a clean native feel, AdMob integration, and Play Store listing already written — shipped as a signed Android App Bundle.</p>
         <div class="stack"><span class="tag">React</span><span class="tag">Capacitor</span><span class="tag">Gemini API</span><span class="tag">AdMob</span></div>
+        </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -229,18 +242,21 @@
     <div class="grid">
 
       <div class="card">
+        <img class="card-thumb" src="shots/zafaf.jpg" alt="Zafaf HQ screenshot" loading="lazy">
+        <div class="card-body">
         <div class="card-top"><h3>Zafaf HQ</h3><span class="status wip">pre-launch</span></div>
         <p>Arabic-language wedding venue & vendor marketplace for Jordan — 150+ venues across Amman, Irbid and Zarqa, transparent pricing, direct WhatsApp contact, and vendor sign-up.</p>
         <div class="stack"><span class="tag">React</span><span class="tag">Express</span><span class="tag">shadcn/ui</span></div>
         <a class="card-link" href="https://7mz410.github.io/ZafafHQ/" target="_blank" rel="noopener">live demo →</a>
+        </div>
       </div>
-
       <div class="card">
+        <div class="card-body">
         <div class="card-top"><h3>Meke Technical Supply</h3><span class="status idea">concept</span></div>
         <p>Hebrew-language landing page concept for a technical-supply storefront — fast single-page mockup, ready to build out into a full store.</p>
         <div class="stack"><span class="tag">HTML/CSS/JS</span></div>
+        </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -255,36 +271,102 @@
     <div class="grid">
 
       <div class="card">
+        <div class="card-body">
         <div class="card-top"><h3>The247 (archive)</h3><span class="status idea">legacy</span></div>
         <p>The original the247 site, before the rebuild — kept as a record of where this brand started.</p>
         <div class="stack"><span class="tag">WordPress</span></div>
         <a class="card-link" href="https://the247com.wordpress.com/" target="_blank" rel="noopener">the247com.wordpress.com →</a>
+        </div>
       </div>
-
       <div class="card">
+        <img class="card-thumb" src="shots/rootsapiens.jpg" alt="Rootsapiens screenshot" loading="lazy">
+        <div class="card-body">
         <div class="card-top"><h3>Rootsapiens</h3><span class="status ok">live</span></div>
         <p>Creative/comics portfolio site with a full image gallery system and custom build pipeline.</p>
         <div class="stack"><span class="tag">React</span><span class="tag">Vite</span><span class="tag">Framer Motion</span></div>
         <a class="card-link" href="https://rootsapiens.com" target="_blank" rel="noopener">rootsapiens.com →</a>
+        </div>
       </div>
-
       <div class="card">
+        <img class="card-thumb" src="shots/sabaaneh.jpg" alt="Sabaaneh screenshot" loading="lazy">
+        <div class="card-body">
         <div class="card-top"><h3>Sabaaneh</h3><span class="status ok">live</span></div>
         <p>Artist portfolio for illustrator Sabaaneh — books, cartoons, murals and prints galleries with an automated page-generation pipeline.</p>
         <div class="stack"><span class="tag">Vue 3</span><span class="tag">Vite</span></div>
         <a class="card-link" href="https://sabaaneh.com" target="_blank" rel="noopener">sabaaneh.com →</a>
+        </div>
       </div>
-
       <div class="card">
+        <div class="card-body">
         <div class="card-top"><h3>ROZ</h3><span class="status ok">live</span></div>
         <p>Marketing/landing site for the ROZ HR product.</p>
         <div class="stack"><span class="tag">Next.js</span><span class="tag">Tailwind</span></div>
+        </div>
       </div>
-
       <div class="card">
+        <img class="card-thumb" src="shots/shadi.jpg" alt="Shadi Zaqtan screenshot" loading="lazy">
+        <div class="card-body">
+        <div class="card-top"><h3>Shadi Zaqtan</h3><span class="status ok">live</span></div>
+        <p>Artist site for songwriter & composer Shadi Zaqtan — bilingual (EN/AR), built around music and bio pages.</p>
+        <div class="stack"><span class="tag">React</span><span class="tag">Vite</span></div>
+        <a class="card-link" href="https://shadizaqtan.com" target="_blank" rel="noopener">shadizaqtan.com →</a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-thumb" src="shots/el7mz.jpg" alt="El7mz screenshot" loading="lazy">
+        <div class="card-body">
         <div class="card-top"><h3>El7mz</h3><span class="status ok">live</span></div>
         <p>Personal artist & designer portfolio, including a feature on the "Rooted in Resilience" public art installation in Ghent.</p>
         <div class="stack"><span class="tag">React</span><span class="tag">Vite</span><span class="tag">Framer Motion</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="team">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-tag">05</span>
+      <span class="section-title">Team</span>
+      <span class="section-sub">who's behind it</span>
+    </div>
+    <div class="grid">
+
+      <div class="card">
+        <div class="card-body">
+        <div class="card-top"><h3>Hamza Abu Ayyash</h3><span class="status ok">CCO</span></div>
+        <p class="role">Co-Founder — Creative & Brand Systems</p>
+        <p>Visual storytelling, brand systems, creative technology, museum/festival-grade content.</p>
+        <p class="owns"><strong>Owns:</strong> brand voice & design language, creative templates, showcase library, content QA, cultural partnerships.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+        <div class="card-top"><h3>Nadeem Issaid</h3><span class="status ok">CPO · Acting CEO</span></div>
+        <p class="role">Co-Founder — Product & GTM</p>
+        <p>Senior product/UX leadership bridging customer needs, design, and go-to-market.</p>
+        <p class="owns"><strong>Owns:</strong> product strategy & roadmap, UX research, pricing/packaging, early sales, fundraising narrative.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+        <div class="card-top"><h3>Anas Dadi</h3><span class="status ok">CTO</span></div>
+        <p class="role">Co-Founder — Cloud & AI Platform</p>
+        <p>DevSecOps/SRE, multi-cloud architecture, Kubernetes, IaC, observability, ML/LLM pipelines.</p>
+        <p class="owns"><strong>Owns:</strong> platform architecture, reliability (SLOs/SLIs), security & compliance, data/ML ops, technical hiring.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+        <div class="card-top"><h3>LaRose v.1</h3><span class="status idea">AI · non-equity</span></div>
+        <p class="role">AI Chief-of-Staff</p>
+        <p>Weekly agenda autopilot, decision log, KPI cockpit, PRD/story scaffolding, monthly team pulse.</p>
+        <p class="owns"><strong>Guardrails:</strong> human approval for spend/hiring/roadmap changes, source-linked suggestions, full audit trail.</p>
+        </div>
       </div>
 
     </div>
@@ -293,7 +375,7 @@
 
 <footer>
   <div class="wrap">
-    built by <a href="mailto:hamza.abu3ayash@gmail.com">Hamza Abu Ayyash</a> — every project on this page was designed and shipped with AI-assisted development.
+    built by <a href="mailto:hamza.abu3ayash@gmail.com">the247</a> — every project on this page was designed and shipped with AI-assisted development.
   </div>
 </footer>
 
