@@ -308,7 +308,7 @@
   @media (prefers-reduced-motion: reduce){
     .hero-gradient::before, .hero-gradient::after{ animation:none; opacity:0; }
   }
-  .hero-inner{position:relative; z-index:1; max-width:640px; padding:150px 24px 64px;}
+  .hero-inner{position:relative; z-index:1; max-width:640px; padding:150px 0 64px;}
   .hero-eyebrow{
     font-family:var(--mono); font-size:.8rem; color:#fff; letter-spacing:.05em;
     display:inline-flex; align-items:center; gap:8px; margin-bottom:26px;
@@ -493,6 +493,7 @@
 
 <section class="hero">
   <div class="hero-gradient"></div>
+  <div class="wrap">
   <div class="hero-inner">
     <div class="hero-eyebrow reveal">ALWAYS BUILDING</div>
     <h1 class="reveal">Built with AI, shipped for real.</h1>
@@ -506,6 +507,7 @@
       <div><div class="n">1</div><div class="l">store-ready app</div></div>
       <div><div class="n">14</div><div class="l">shipped projects</div></div>
     </div>
+  </div>
   </div>
   <div class="tech-strip wrap">
     <div class="tech-row reveal">
