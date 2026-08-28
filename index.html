@@ -47,10 +47,16 @@
 
   /* header — solid dark bar, always legible over both the gradient hero and light sections */
   header{
-    position:sticky; top:0; z-index:30;
-    background:color-mix(in srgb, var(--deep) 88%, transparent);
+    position:fixed; top:0; left:0; right:0; z-index:30;
+    background:transparent;
+    backdrop-filter:none;
+    border-bottom:1px solid transparent;
+    transition:background .3s, backdrop-filter .3s, border-color .3s;
+  }
+  header.is-scrolled{
+    background:color-mix(in srgb, var(--deep) 62%, transparent);
     backdrop-filter:blur(14px);
-    border-bottom:1px solid rgba(255,255,255,.08);
+    border-bottom:1px solid rgba(255,255,255,.1);
   }
   nav{display:flex; align-items:center; justify-content:space-between; padding:14px 24px; gap:20px;}
   .logo{display:flex; align-items:center; gap:9px; font-weight:600; color:#fff;}
@@ -661,6 +667,13 @@
 </footer>
 
 <script>
+  var header = document.querySelector('header');
+  function onScrollHeader(){
+    header.classList.toggle('is-scrolled', window.scrollY > 40);
+  }
+  onScrollHeader();
+  window.addEventListener('scroll', onScrollHeader, { passive: true });
+
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (!reduced && 'IntersectionObserver' in window) {
     document.querySelectorAll('.grid, .pillars, .cases, .cap-grid, .process-list, .tech-row').forEach(function(grid){
