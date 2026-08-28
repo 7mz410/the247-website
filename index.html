@@ -54,9 +54,10 @@
     transition:background .3s, backdrop-filter .3s, border-color .3s;
   }
   header.is-scrolled{
-    background:color-mix(in srgb, var(--deep) 62%, transparent);
-    backdrop-filter:blur(14px);
-    border-bottom:1px solid rgba(255,255,255,.1);
+    background:rgba(255,255,255,.001);
+    backdrop-filter:blur(14px) saturate(1.1);
+    -webkit-backdrop-filter:blur(14px) saturate(1.1);
+    border-bottom:1px solid rgba(255,255,255,.14);
   }
   nav{display:flex; align-items:center; justify-content:space-between; padding:14px 24px; gap:20px;}
   .logo{display:flex; align-items:center; gap:9px; font-weight:600; color:#fff;}
@@ -75,12 +76,26 @@
     background:
       radial-gradient(140% 120% at 6% -15%, var(--deep) 0%, var(--navy) 18%, var(--accent) 40%, #8fb4f5 62%, var(--bg) 84%);
   }
-  .hero-gradient::before{
+  .hero-gradient::before, .hero-gradient::after{
     content:''; position:absolute; inset:0;
-    background-image:radial-gradient(rgba(255,255,255,.35) 1px, transparent 1.5px);
-    background-size:26px 26px;
     mask-image:radial-gradient(ellipse 90% 70% at 15% 10%, #000 35%, transparent 75%);
-    opacity:.5;
+  }
+  .hero-gradient::before{
+    background-image:radial-gradient(rgba(255,255,255,.4) 1px, transparent 1.5px);
+    background-size:26px 26px;
+    animation:twinkleA 4.5s ease-in-out infinite;
+  }
+  .hero-gradient::after{
+    background-image:radial-gradient(rgba(255,255,255,.4) 1px, transparent 1.5px);
+    background-size:38px 38px;
+    background-position:13px 19px;
+    animation:twinkleB 6.5s ease-in-out infinite;
+    animation-delay:-2s;
+  }
+  @keyframes twinkleA{ 0%,100%{opacity:.2;} 50%{opacity:.55;} }
+  @keyframes twinkleB{ 0%,100%{opacity:.12;} 50%{opacity:.4;} }
+  @media (prefers-reduced-motion: reduce){
+    .hero-gradient::before, .hero-gradient::after{ animation:none; opacity:.35; }
   }
   .hero-inner{position:relative; z-index:1; max-width:640px; padding:150px 24px 64px;}
   .hero-eyebrow{
