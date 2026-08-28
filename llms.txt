@@ -1,0 +1,49 @@
+# the247
+
+> A studio building SaaS platforms, automation engines, mobile apps and websites end-to-end with AI-assisted development. 14 shipped projects, 4 live domains, 4 automation engines, 1 store-ready mobile app.
+
+the247 is a small studio run by three co-founders, currently doubling as a live portfolio of everything shipped so far. Design and code are produced end-to-end with AI tooling doing the heavy lifting on scaffolding, migrations and boilerplate — a human still scopes, reviews, and ships every release.
+
+## Contact
+
+- Email: info@el7mz.com
+- WhatsApp (Nadeem Issaid): https://wa.me/32494829360
+- WhatsApp (Hamza Abu Ayyash): https://wa.me/32498459299
+- GitHub: https://github.com/7mz410
+
+## Team
+
+- Hamza Abu Ayyash — Co-Founder, Creative & Brand Systems (CCO)
+- Nadeem Issaid — Co-Founder, Product & GTM (CPO, Acting CEO)
+- Anas Dadi — Co-Founder, Cloud & AI Platform (CTO)
+- LaRose v.1 — AI Chief-of-Staff (non-equity AI role, not a person)
+
+## Automation Engines & SaaS
+
+- Palift Sales Workflow — bilingual (EN/AR) six-stage sales pipeline for a forklift/heavy-machinery dealer. React 19, Firebase, TypeScript, i18next. Status: live.
+- AI Genesis — autonomous YouTube content factory (research, script, voice-over, video assembly, publishing). Python, Gemini API, Google TTS, YouTube API. Status: live.
+- ROZ — Core HR — attendance & leave-management SaaS with cron-scheduled push reminders. Next.js, Prisma, PostgreSQL, NextAuth. Status: beta.
+- LinkedIn Apply Agent — job-search automation tool (scrape, match, draft, report). Node.js, Puppeteer. Status: internal tool.
+
+## Mobile
+
+- Tasbih — digital dhikr/prayer-bead counter app, signed Android App Bundle with AdMob. React, Capacitor, Gemini API, AdMob. Status: store-ready.
+
+## Marketplace & Platforms
+
+- Zafaf HQ — Arabic-language wedding venue & vendor marketplace for Jordan (150+ venues). https://7mz410.github.io/ZafafHQ/ — Status: pre-launch.
+- Madtape — watch-and-submit platform for short-form AI-generated films. https://madtape.com — Status: pre-launch.
+- Meke Technical Supply — Hebrew-language landing page concept. Status: concept.
+
+## Websites
+
+- Rootsapiens — creative/comics portfolio site. https://rootsapiens.com — Status: live.
+- Sabaaneh — artist portfolio for illustrator Sabaaneh. https://sabaaneh.com — Status: live.
+- Shadi Zaqtan — bilingual artist site for songwriter/composer Shadi Zaqtan. https://shadizaqtan.com — Status: live.
+- ROZ — marketing/landing site for the ROZ HR product. Status: live.
+- El7mz — personal artist & designer portfolio. Status: live.
+- The247 (archive) — original the247 site before the rebuild. https://the247com.wordpress.com/ — Status: legacy.
+
+## Full site
+
+https://the-247.com/
