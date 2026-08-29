@@ -40,8 +40,8 @@ the247 is a small studio run by three co-founders, currently doubling as a live 
 - Rootsapiens — creative/comics portfolio site. https://rootsapiens.com — Status: live.
 - Sabaaneh — artist portfolio for illustrator Sabaaneh. https://sabaaneh.com — Status: live.
 - Shadi Zaqtan — bilingual artist site for songwriter/composer Shadi Zaqtan. https://shadizaqtan.com — Status: live.
-- ROZ — marketing/landing site for the ROZ HR product. Status: live.
-- El7mz — personal artist & designer portfolio. Status: live.
+- ROZ — marketing/landing site for the ROZ HR product. https://roz-hr.com/ — Status: live.
+- El7mz — personal artist & designer portfolio. https://el7mz.com/ — Status: live.
 - The247 (archive) — original the247 site before the rebuild. https://the247com.wordpress.com/ — Status: legacy.
 
 ## Full site
