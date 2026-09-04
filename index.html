@@ -330,6 +330,10 @@
     .hero-gradient::before, .hero-gradient::after{ animation:none; opacity:0; }
   }
   .hero-inner{position:relative; z-index:1; max-width:640px; padding:150px 0 64px;}
+  .hero-brand{
+    color:#fff; font-weight:700; letter-spacing:-.02em;
+    font-size:clamp(2.6rem,6.5vw,4.6rem); line-height:1; margin-bottom:22px;
+  }
   .hero-eyebrow{
     font-family:var(--mono); font-size:.8rem; color:#fff; letter-spacing:.05em;
     display:inline-flex; align-items:center; gap:8px; margin-bottom:26px;
@@ -516,6 +520,7 @@
   <div class="hero-gradient"></div>
   <div class="wrap">
   <div class="hero-inner">
+    <div class="hero-brand reveal">The 247</div>
     <div class="hero-eyebrow reveal">ALWAYS BUILDING</div>
     <h1 class="reveal">Built with AI, shipped for real.</h1>
     <p class="reveal">A working portfolio of SaaS platforms, automation engines, mobile apps and websites — designed and coded end-to-end using AI-assisted development.</p>
