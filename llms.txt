@@ -33,7 +33,6 @@ the247 is a small studio run by three co-founders, currently doubling as a live 
 
 - Zafaf HQ — Arabic-language wedding venue & vendor marketplace for Jordan (150+ venues). https://7mz410.github.io/ZafafHQ/ — Status: pre-launch.
 - Madtape — watch-and-submit platform for short-form AI-generated films. https://madtape.com — Status: pre-launch.
-- Meke Technical Supply — Hebrew-language landing page concept. Status: concept.
 
 ## Websites
 
@@ -42,6 +41,7 @@ the247 is a small studio run by three co-founders, currently doubling as a live 
 - Shadi Zaqtan — bilingual artist site for songwriter/composer Shadi Zaqtan. https://shadizaqtan.com — Status: live.
 - ROZ — marketing/landing site for the ROZ HR product. https://roz-hr.com/ — Status: live.
 - El7mz — personal artist & designer portfolio. https://el7mz.com/ — Status: live.
+- Habebé Essentials — e-commerce storefront for a premium baby-carrier brand, Stripe checkout. https://habebeessentials.com/ — Status: live.
 - The247 (archive) — original the247 site before the rebuild. https://the247com.wordpress.com/ — Status: legacy.
 
 ## Full site
