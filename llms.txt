@@ -1,6 +1,6 @@
 # the247
 
-> A studio building SaaS platforms, automation engines, mobile apps and websites end-to-end with AI-assisted development. 14 shipped projects, 4 live domains, 4 automation engines, 1 store-ready mobile app.
+> A studio building SaaS platforms, automation engines, mobile apps and websites end-to-end with AI-assisted development. 12 shipped projects, 4 live domains, 4 automation engines, 1 store-ready mobile app.
 
 the247 is a small studio run by three co-founders, currently doubling as a live portfolio of everything shipped so far. Design and code are produced end-to-end with AI tooling doing the heavy lifting on scaffolding, migrations and boilerplate — a human still scopes, reviews, and ships every release.
 
@@ -36,13 +36,11 @@ the247 is a small studio run by three co-founders, currently doubling as a live 
 
 ## Websites
 
-- Rootsapiens — creative/comics portfolio site. https://rootsapiens.com — Status: live.
-- Sabaaneh — artist portfolio for illustrator Sabaaneh. https://sabaaneh.com — Status: live.
 - Shadi Zaqtan — bilingual artist site for songwriter/composer Shadi Zaqtan. https://shadizaqtan.com — Status: live.
-- ROZ — marketing/landing site for the ROZ HR product. https://roz-hr.com/ — Status: live.
+- Sabaaneh — artist portfolio for illustrator Sabaaneh. https://sabaaneh.com — Status: live.
 - El7mz — personal artist & designer portfolio. https://el7mz.com/ — Status: live.
 - Habebé Essentials — e-commerce storefront for a premium baby-carrier brand, Stripe checkout. https://habebeessentials.com/ — Status: live.
-- The247 (archive) — original the247 site before the rebuild. https://the247com.wordpress.com/ — Status: legacy.
+- Rootsapiens — creative/comics portfolio site. https://rootsapiens.com — Status: live.
 
 ## Full site
 
