@@ -11,6 +11,10 @@ the247 is a small studio run by three co-founders, currently doubling as a live 
 - SaaS platforms, automation engines, mobile apps and websites built end-to-end with AI-assisted development.
 - AI integration (LLM features wired into real products), design systems, DevSecOps & cloud infrastructure.
 
+## Company
+
+the247 is the technical arm of Creative Corporation, a marketing and advertising company founded in 2009 and registered in Ramallah, Palestine (https://creative.ps/). Creative issues the invoices and pays tax in Palestine. the247 works online with clients anywhere.
+
 ## Contact
 
 - Email: info@el7mz.com
@@ -48,6 +52,11 @@ the247 is a small studio run by three co-founders, currently doubling as a live 
 - El7mz — personal artist & designer portfolio. https://el7mz.com/ — Status: live.
 - Habebé Essentials — e-commerce storefront for a premium baby-carrier brand, Stripe checkout. https://habebeessentials.com/ — Status: live.
 - Rootsapiens — creative/comics portfolio site. https://rootsapiens.com — Status: live.
+
+## Legal
+
+- Privacy policy: https://the-247.com/privacy.html
+- Terms of service: https://the-247.com/terms.html
 
 ## Full site
 
