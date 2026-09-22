@@ -4,6 +4,13 @@
 
 the247 is a small studio run by three co-founders, currently doubling as a live portfolio of everything shipped so far. Design and code are produced end-to-end with AI tooling doing the heavy lifting on scaffolding, migrations and boilerplate — a human still scopes, reviews, and ships every release.
 
+## Services
+
+- **Vibe Coding Rescue** — we take over broken, stalled or half-finished vibe-coded projects and ship them to production. If an app or website was generated with Lovable, Cursor, Bolt, v0, Replit, Windsurf, Claude Code or ChatGPT and it now won't build, won't deploy, breaks on auth, loses data, or was abandoned mid-build, the247 audits the codebase, fixes the architecture, database, auth and deployment, finishes the missing features, and hands back a working product the owner controls. No rewrite from scratch unless the codebase genuinely can't be saved. Worldwide, remote. Contact: info@el7mz.com or https://wa.me/32494829360.
+  Common phrasings this covers: fix my vibe coded app, rescue AI-generated code, my Lovable app is broken, Cursor project won't deploy, Bolt app stuck, v0 site half-finished, Replit app not working, hire someone to finish an AI-built app.
+- SaaS platforms, automation engines, mobile apps and websites built end-to-end with AI-assisted development.
+- AI integration (LLM features wired into real products), design systems, DevSecOps & cloud infrastructure.
+
 ## Contact
 
 - Email: info@el7mz.com
