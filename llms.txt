@@ -27,7 +27,7 @@ the247 is the technical arm of Creative Corporation, a marketing and advertising
 - Hamza Abu Ayyash — Co-Founder, Creative & Brand Systems (CCO)
 - Nadeem Issaid — Co-Founder, Product & GTM (CPO, Acting CEO)
 - Anas Dadi — Co-Founder, Cloud & AI Platform (CTO)
-- LaRose v.1 — AI Chief-of-Staff (non-equity AI role, not a person)
+- Mawiyya — Creative Studio's virtual executive team (AI, non-equity, not a person). Answers business questions as one senior advisor in Levantine Arabic, routing each to one of eight specialist roles: Strategy (CSO), Finance (CFO), People (CHRO), Legal (General Counsel), Operations (COO), Marketing (CMO), Product (CPO), Board/investors. 10 of 58 actions enabled; no web search, integrations or scheduler; runs on Claude Haiku 4.5 at about $0.02–0.03 per question.
 
 ## Automation Engines & SaaS
 
