@@ -44,6 +44,7 @@ the247 is the technical arm of Creative Corporation, a marketing and advertising
 
 - Zafaf HQ — Arabic-language wedding venue & vendor marketplace for Jordan (150+ venues). https://7mz410.github.io/ZafafHQ/ — Status: pre-launch.
 - Madtape — watch-and-submit platform for short-form AI-generated films. https://madtape.com — Status: pre-launch.
+- Creative Studio — free, open-source creative suite in Arabic and English (vector, image editing, animation, video, layout, presentations and more). Mac, Windows, Linux and web. https://studio.creative.ps/ — Status: live.
 
 ## Websites
 
